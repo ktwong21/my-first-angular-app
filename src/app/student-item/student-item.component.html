@@ -1,0 +1,5 @@
+<div>{{ student().id }} {{ student().name }}</div>
+<Form>
+    <input type="text" [(ngModel)]="student().name" />
+    <button (click)="this.studentNameChanged(student().id, student().name)">Change Name</button>
+</Form>

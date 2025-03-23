@@ -1,0 +1,7 @@
+<h3>Students</h3>
+
+<div>
+    @for (student of students(); track $index) {
+        <app-student-item [student]="student" (studentUpdated)="refreshStudents()"></app-student-item>
+    }
+</div>
